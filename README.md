@@ -11,12 +11,11 @@ This project focuses on analyzing and predicting employee attrition using the **
 3.  [Methodology](#methodology)
 4.  [Key Findings (Exploratory Data Analysis)](#key-findings-exploratory-data-analysis)
 5.  [Modeling & Results](#modeling-results)
-6.  [Setup and Installation](#setup-and-installation)
-7.  [Project Structure](#project-structure)
+6.  [Project Structure](#project-structure)
 
 ## Data Source
 
-The analysis is based on the `HR Employee Attrition.csv` dataset, which contains 1,470 employee records and 35 features, including demographic, job role, salary, and satisfaction metrics.
+The analysis is based on the `HR Employee Attrition.csv` dataset, which was provided by the Unified Mentor where I worked as an Intern. This dataset contains 1,470 employee records and 35 features, including demographic, job role, salary, and satisfaction metrics.
 
 ## Objectives
 
@@ -72,3 +71,10 @@ Due to the severe class imbalance, the low **Recall** score for the positive cla
 1.  Employing techniques to handle imbalance, such as **SMOTE (Synthetic Minority Over-sampling Technique)**.
 2.  Utilizing the `class_weight='balanced'` parameter in the classifier to penalize misclassifications of the minority class more heavily.
 3.  Experimenting with more complex models like Random Forests or Gradient Boosting.
+
+
+## Project Structure
+
+├── IBM HR Anlaytics.ipynb  # Main analysis and modeling notebook
+├── HR Employee Attrition.csv # The dataset used for the project
+└── README.md
