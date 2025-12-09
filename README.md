@@ -84,9 +84,9 @@ pip install pandas numpy matplotlib seaborn scikit-learn
 ## Project Structure
 
 ├── IBM HR Anlaytics.ipynb  # Main analysis and modeling notebook
-|
+
 ├── HR Employee Attrition.csv # The dataset used for the project
-|
+
 └── README.md
 
 
