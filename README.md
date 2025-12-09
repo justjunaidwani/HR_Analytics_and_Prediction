@@ -11,7 +11,8 @@ This project focuses on analyzing and predicting employee attrition using the **
 3.  [Methodology](#methodology)
 4.  [Key Findings (Exploratory Data Analysis)](#key-findings-exploratory-data-analysis)
 5.  [Modeling & Results](#modeling-results)
-6.  [Project Structure](#project-structure)
+6.  [Setup and Installation](#setup-and-installation)
+7.  [Project Structure](#project-structure)
 
 ## Data Source
 
@@ -30,7 +31,7 @@ The project follows a standard data science pipeline:
 
 1.  **Data Loading and Cleaning:**
     * Loaded the `HR Employee Attrition.csv` dataset.
-    * Dropped non-informative columns (`EmployeeCount`, `Over18`, `StandardHours`, `EmployeeNumber`).
+    * Droppped non-informative columns (`EmployeeCount`, `Over18`, `StandardHours`, `EmployeeNumber`).
     * Converted the target variable `Attrition` from categorical (`Yes`/`No`) to numerical (`1`/`0`).
 
 2.  **Exploratory Data Analysis (EDA):**
@@ -51,9 +52,9 @@ The project follows a standard data science pipeline:
 
 Based on the initial analysis, several factors showed a strong relationship with attrition:
 
-* **Age:** The **29-38** age group exhibited the highest attrition rate (42.62%), followed closely by the **18-28** group (30.80%). *[Include image of Attrition Rate by Age Group]*
-* **Department:** The **Research & Development** department had the lowest attrition rate (around 14%), despite having the largest workforce. *[Include image of Attrition as per Department]*
-* **Job Satisfaction:** A significant number of attrited employees reported **Low Job Satisfaction**, highlighting satisfaction metrics as crucial retention indicators. *[Include image of Job Satisfaction Distribution]*
+* **Age:** The **29-38** age group exhibited the highest attrition rate (42.62%), followed closely by the **18-28** group (30.80%). 
+* **Department:** The **Research & Development** department had the lowest attrition rate (around 14%), despite having the largest workforce. 
+* **Job Satisfaction:** A significant number of attrited employees reported **Low Job Satisfaction**, highlighting satisfaction metrics as crucial retention indicators. 
 
 ## Modeling & Results
 
@@ -72,9 +73,31 @@ Due to the severe class imbalance, the low **Recall** score for the positive cla
 2.  Utilizing the `class_weight='balanced'` parameter in the classifier to penalize misclassifications of the minority class more heavily.
 3.  Experimenting with more complex models like Random Forests or Gradient Boosting.
 
+## Setup and Installation
+
+To run the Jupyter notebook (`IBM HR Anlaytics.ipynb`), you will need the following libraries:
+
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn
+```
 
 ## Project Structure
 
 ├── IBM HR Anlaytics.ipynb  # Main analysis and modeling notebook
+|
 ├── HR Employee Attrition.csv # The dataset used for the project
+|
 └── README.md
+
+
+
+
+
+
+
+
+
+
+
+
+
